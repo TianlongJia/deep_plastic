@@ -1,10 +1,5 @@
 # Experiment configuration files
 
-# experiment name (determines output folder)
-exp_name: TL_vs_Scracth
-
-# data folder
-# img_data_folder: ./data
 
 # Path
 Path:
@@ -21,16 +16,13 @@ Path:
     path_val: F:\Tianlong\Data\Deep_Plastic\Data\Exp1\Validation 1
     # path_val: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Validation 2
     
-    # path_test: F:\Tianlong\Data\Deep_Plastic\Data\Exp1\Test 1
+    path_test: F:\Tianlong\Data\Deep_Plastic\Data\Exp1\Test 1
     # path_test: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Test 2
     # path_test: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Test 3
     # path_test: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Test 4
-    path_test: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Test 5
+    # path_test: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Test 5
     
-    model_path: F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\mobile_net_lr_0.00001.hdf5
-    # model_path: C:\D\D\User\Data\Deep_Plastic\mobile_net_lr_0.00001.hdf5  # My PC
-    
-    save_gradcam_result_path: F:\Tianlong\Data\Deep_Plastic\Results\Exp1\Model_no_rescale_layer\Grad_cam_results
+    model_path: F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\squeeze_net.hdf5
 
     save_model_path_fromscratch:
       - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\mobile_net.hdf5
@@ -76,8 +68,16 @@ Path:
     
     save_misclassified_images_path:
         F:\Tianlong\Data\Deep_Plastic\Data\Exp1\Misclassified_images
-        # C:\D\D\User\Data\Deep_Plastic\Misclassified_images_2   # My PC
-
+    
+    
+    rooter_path_DA: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Train 3.1-adding_images
+    
+    # The path to store original images and images augmented
+    dst_path_HV: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Train 3.4-ANI_DA_HV_ALL
+    dst_path_BR: F:\Tianlong\Data\Deep_Plastic\Data\Exp2\Train_DA_BR
+    dst_path_DARK: F:\Tianlong\Data\Deep_Plastic\Data\Exp2\Train_DA_DARK
+    dst_path_NI: F:\Tianlong\Data\Deep_Plastic\Data\Exp2\Train_DA_NI
+    dst_path_MIX: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Train 3.2_adding_images_with_DA_MIX
 
 
 # seeds for reproducibility
@@ -118,7 +118,7 @@ image_width: 224
 num_classes: 4
 
 labels :
-     - 'No'
-     - 'Little'
-     - 'Moderate'
-     - 'Lot'
+     - 'No litter'
+     - 'Little litter'
+     - 'Moderate litter'
+     - 'Lots of litter'

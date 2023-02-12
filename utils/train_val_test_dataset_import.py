@@ -20,6 +20,8 @@ def import_dataset_train_val(path_train, path_val, image_height, image_width, ba
         interpolation='bilinear'
     )
 
+    rescale = Rescaling(scale=1.0/255)
+    ds_train = ds_train.map(lambda image, label: (rescale(image), label))
 
     # Creating a validation dataset
     ds_val = tf.keras.preprocessing.image_dataset_from_directory(
@@ -36,6 +38,8 @@ def import_dataset_train_val(path_train, path_val, image_height, image_width, ba
         interpolation='bilinear'
     )
 
+    rescale = Rescaling(scale=1.0/255)
+    ds_val = ds_val.map(lambda image, label: (rescale(image), label))
 
     return ds_train, ds_val
 
@@ -55,5 +59,7 @@ def import_dataset_test(path_test, image_height, image_width, batch_size):
         interpolation='bilinear'
     )
 
-    
+    rescale = Rescaling(scale=1.0/255)
+    ds_test = ds_test.map(lambda image, label: (rescale(image), label))
+
     return ds_test
