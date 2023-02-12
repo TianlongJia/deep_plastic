@@ -1,0 +1,124 @@
+# Experiment configuration files
+
+# experiment name (determines output folder)
+exp_name: TL_vs_Scracth
+
+# data folder
+# img_data_folder: ./data
+
+# Path
+Path:
+    path_train: F:\Tianlong\Data\Deep_Plastic\Data\Exp1\Train 1
+    # path_train: F:\Tianlong\Data\Deep_Plastic\Data\Exp2\Train 2.1-DA HV
+    # path_train: F:\Tianlong\Data\Deep_Plastic\Data\Exp2\Train 2.2-DA BR
+    # path_train: F:\Tianlong\Data\Deep_Plastic\Data\Exp2\Train 2.3-DA DARK
+    # path_train: F:\Tianlong\Data\Deep_Plastic\Data\Exp2\Train 2.4-DA NI
+    # path_train: F:\Tianlong\Data\Deep_Plastic\Data\Exp2\Train 2.5-DA MIX
+    # path_train: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Train 3.1-adding_images
+    # path_train: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Train 3.2_adding_images_with_DA_MIX
+    # path_train: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Train 3.3_all_images_with_DA_MIX
+
+    path_val: F:\Tianlong\Data\Deep_Plastic\Data\Exp1\Validation 1
+    # path_val: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Validation 2
+    
+    # path_test: F:\Tianlong\Data\Deep_Plastic\Data\Exp1\Test 1
+    # path_test: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Test 2
+    # path_test: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Test 3
+    # path_test: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Test 4
+    path_test: F:\Tianlong\Data\Deep_Plastic\Data\Exp3\Test 5
+    
+    model_path: F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\mobile_net_lr_0.00001.hdf5
+    # model_path: C:\D\D\User\Data\Deep_Plastic\mobile_net_lr_0.00001.hdf5  # My PC
+    
+    save_gradcam_result_path: F:\Tianlong\Data\Deep_Plastic\Results\Exp1\Model_no_rescale_layer\Grad_cam_results
+
+    save_model_path_fromscratch:
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\mobile_net.hdf5
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\squeeze_net.hdf5
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\resnet50_net.hdf5
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\inceptionv3_net.hdf5
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\densenet121.hdf5
+
+    save_ckp_path_fromscratch: 
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\trained_checkpoint\mobile_net
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\trained_checkpoint\squeeze_net
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\trained_checkpoint\resnet50_net
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\trained_checkpoint\inceptionv3_net
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\from_scratch_weights\trained_checkpoint\densenet121
+
+    save_model_path_TL_classifier:
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_classifier_weights\mobile_net.hdf5
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_classifier_weights\squeeze_net.hdf5
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_classifier_weights\resnet50_net.hdf5
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_classifier_weights\inceptionv3_net.hdf5
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_classifier_weights\densenet121.hdf5
+
+    save_ckp_path_TL_classifier:
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_classifier_weights\trained_checkpoint\mobile_net
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_classifier_weights\trained_checkpoint\squeeze_net
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_classifier_weights\trained_checkpoint\resnet50_net
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_classifier_weights\trained_checkpoint\inceptionv3_net
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_classifier_weights\trained_checkpoint\densenet121
+
+    save_model_path_TL_all:
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_all_weights\mobile_net.hdf5
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_all_weights\squeeze_net.hdf5
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_all_weights\resnet50_net.hdf5
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_all_weights\inceptionv3_net.hdf5
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_all_weights\densenet121.hdf5
+
+    save_ckp_path_TL_all:
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_all_weights\trained_checkpoint\mobile_net
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_all_weights\trained_checkpoint\squeeze_net
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_all_weights\trained_checkpoint\resnet50_net
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_all_weights\trained_checkpoint\inceptionv3_net
+      - F:\Tianlong\PythonProject\deep_plastic\output\TL_vs_scratch\TL_all_weights\trained_checkpoint\densenet121
+    
+    save_misclassified_images_path:
+        F:\Tianlong\Data\Deep_Plastic\Data\Exp1\Misclassified_images
+        # C:\D\D\User\Data\Deep_Plastic\Misclassified_images_2   # My PC
+
+
+
+# seeds for reproducibility
+seeds:
+    np: 4320
+    keras: 69
+    augmentation: None
+    
+augmenter:
+    # create generator
+    brightness_range: None
+    horizontal_flip: None
+    vertical_flip: None
+    preprocessing_function: None
+
+# model architectures to train
+algorithms:
+    - MobileNetV2
+    - InceptionV3
+    - ResNet50
+    - DenseNet121
+    - Squeezenet
+
+adamParams:
+    lr: 0.0001
+    weight_decay: 0
+    
+trainParams:    
+    num_epochs: 100
+
+batch_size:    
+    tra: 16
+    val: 16
+    tst: 16 
+
+image_height: 224
+image_width: 224
+num_classes: 4
+
+labels :
+     - 'No'
+     - 'Little'
+     - 'Moderate'
+     - 'Lot'
