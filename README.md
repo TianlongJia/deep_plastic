@@ -1,40 +1,44 @@
-## A MATLAB® toolbox for assessing the impacts of cyber-physical attacks on water distribution systems
 
-*epanetCPA* is an open-source object-oriented MATLAB® toolbox for modelling the hydraulic response of water distribution systems to cyber-physical attacks. epanetCPA allows users to quickly design various attack scenarios and assess their impact via simulation with EPANET, a popular public-domain model for water network analysis.
+# Detection of floating macroplastic litter with image classification
 
-If you happen to use this code for a publication, please cite the following paper which describes epanetCPA:
+The objective of this study is to develop five deep learning models (ResNet50, InceptionV3, DenseNet121, MobileNetV2, and SqueezeNet) that detect floating macroplastic litter with multi-class image classification. The study also evaluates the benefits of multiple transfer learning strategies and data augmentation techniques on detection performance, and assess and improves the generalization ability of architectures considering unseen litter items and new device settings.
+
+If you happen to use this code for a publication, please cite the following paper which describes models and dataset:
+
+```http
+  To do: update the citation of the paper 
 ```
-Taormina, R., Galelli, S., Douglas, H.C., Tippenhauer, N. O., Salomons, E., & A. Ostfeld. A toolbox for assessing the impacts of cyber-physical attacks on water distribution systems. Environmental Modelling & Software, DOI: https://doi.org/10.1016/j.envsoft.2018.11.008.
+## Dataset
+
+"TU Delft - Green Village" (TUD-GV) dataset is a novel labelled
+dataset of around ten thousand camera and phone images of floating macroplastic and other
+litter items, collected from semi-controlled experiments in a drainage canal of the TU Delft
+Campus, the Netherlands. 
+
+```http
+  To do: update the Zenodo link
 ```
 
-### Requirements:
-1. **EPANET2.0**&nbsp;&nbsp;&nbsp;&nbsp;If you are runinng on a 32bit OS please download the EPANET2 Programmer's Toolkit from the [EPA website](https://www.epa.gov/water-research/epanet), and substitute the epanet2.h, epanet2.lib and epanet2.dll files in your local epanetCPA folder. Compiled librarires for a 64bit machine are included in the repository. These libraries can also be found [here](http://epanet.de/developer/64bit.html.en).
 
-2. **MATLAB**&nbsp;&nbsp;&nbsp;&nbsp;The toolbox has been tested on MATLAB® R2014b, and it should work for later versions. Make sure that C++ compilers (e.g. Windows SDK 7.1 for MATLAB® R2014b) are installed and interfaced with MATLAB® so that dlls can be invoked.
-Feedback on using epanetCPA with other versions of MATLAB is greatly appreciated. Please contact riccardo.taormina@gmail.com to provide your feedback.
+## Requirements:
+- Windows 10 (It is only tested on Windows)
+- Python == 2.6
+- Tensorflow==2.6.0
+- Keras==2.6
 
-3. **PYTHON**&nbsp;&nbsp;&nbsp;&nbsp;You need PYTHON installed only if you want to employ the provided IPython (Jupyter) notebook provided here for visualizing the results. If that is the case, please install the PYTHON modules required, reported at the beginning of the notebook.
+```http
+  pip install -r requirements.txt
+```
+## Usage
 
-### Usage
-1. Edit the *main.m* file in the repository to specify which attack scenario you want to simulate. Five different scenarios are provided in the *.cpa* files contained in the repository (see following section).
-2. Simulate the attack scenario by runinng *main.m*. The results are provided as one or two *csv* files depending on the type of attacks.
-3. Use the IPython notebook for visualizing the results, unless you want to do otherwise.
+- Edit the main_Model_training.ipynb file in the repository to train models using the architecures and the training procedures you want to simulate. Five model architecures are provided in the Models.py file contained in the repository.
+-  Edit the main_Evaluation.ipynb file in the repository to evaluate model performnace on test sets.
+-  Edit the main_Data_Augmentation.ipynb file in the repository to generate images using data augmentation techniques.
+-  Edit the config.yaml file in the repository to define environment variables, parameters, and other properties for the project.
+- Use the IPython notebook for visualizing the results, unless you want to do otherwise.
 
-### Examples
-(Please refer to the EPANET maps in the *.inp* file for details on the water networks layout and control logic)
 
-Folder scenarios/ctown/:
-1. *scenario01.cpa*&nbsp;&nbsp;&nbsp;&nbsp; Manipulation of sensor readings arriving to PLC3. The attacker shows that tank T2 is full. The PLC closes valve V2, thus preventing the flow to reach the tank and disconnecting part of the network.
-2. *scenario02.cpa*&nbsp;&nbsp;&nbsp;&nbsp; Same as *scenario01* but run using the pressure driven engine to obtain more reliable results. 
-3. *scenario03.cpa*&nbsp;&nbsp;&nbsp;&nbsp; The attacker modifies the control logic of PLC5 so that some of the controlled pumps (PU10, PU11) switch on/off intermittently.
-4. *scenario04.cpa*&nbsp;&nbsp;&nbsp;&nbsp;  Denial-of-service of the connection link between PLC2 and PLC1. PLC1 fails to receive updated readings of T1 water level and keeps the pumps (PU1,PU2) ON. This causes a surge in the tank T1.
-5. *scenario05.cpa*&nbsp;&nbsp;&nbsp;&nbsp;   Same as *scenario04* but this time the attacker conceals the tanks surge from SCADA by altering the data sent by PLC2 to SCADA.
+## Authors
 
-Folder scenarios/minitown/:
-1. *minitown_attack.cpa*&nbsp;&nbsp;&nbsp;&nbsp; Denial-of-service of the connection link between PLC1 and PLC2. PLC1 fails to receive updated readings of TANK water level and keeps the pumps (PUMP1,PUMP2) ON. This causes a surge in the tank TANK. The attacker conceals the tanks surge from SCADA by altering the data sent by PLC1 to SCADA.
+- [@Tianlong Jia](https://github.com/TianlongJia)
 
-### Authors
-Riccardo Taormina is the main developer of epanetCPA. The core of the pressure driven engine was developed by Hunter C. Douglas.
-
-### License
-epanetCPA is under the MIT license. Please read it carefully before employing the toolbox.
