@@ -15,7 +15,7 @@ dataset of around ten thousand camera and phone images of floating macroplastic 
 litter items, collected from semi-controlled experiments in a drainage canal of the TU Delft
 Campus, the Netherlands. 
 
-```http
+```bash
   To do: update the Zenodo link
 ```
 
@@ -26,7 +26,7 @@ Campus, the Netherlands.
 - Tensorflow==2.6.0
 - Keras==2.6
 
-```http
+```bash
   pip install -r requirements.txt
 ```
 ## Usage
