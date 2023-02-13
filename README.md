@@ -21,8 +21,8 @@ Campus, the Netherlands.
 
 
 ## Requirements:
-- Windows 10 (It is only tested on Windows)
-- Python == 2.6
+- Windows 10 (It is only tested on Windows 10)
+- Python == 3.8.5
 - Tensorflow==2.6.0
 - Keras==2.6
 
@@ -31,11 +31,11 @@ Campus, the Netherlands.
 ```
 ## Usage
 
-- Edit the main_Model_training.ipynb file in the repository to train models using the architecures and the training procedures you want to simulate. Five model architecures are provided in the Models.py file contained in the repository.
--  Edit the main_Evaluation.ipynb file in the repository to evaluate model performnace on test sets.
--  Edit the main_Data_Augmentation.ipynb file in the repository to generate images using data augmentation techniques.
--  Edit the config.yaml file in the repository to define environment variables, parameters, and other properties for the project.
-- Use the IPython notebook for visualizing the results, unless you want to do otherwise.
+-  Edit the main_Model_training.ipynb file in the repository to train models using the architecures and the training procedures you want to simulate.
+-  Edit the main_Evaluation.ipynb file to evaluate model performnaces on test sets.
+-  Edit the main_Data_Augmentation.ipynb file to generate images using data augmentation techniques.
+-  Edit the config.yaml file in the repository to define parameters, and other properties for the project.
+-  Use the IPython notebook for visualizing the results, unless you want to do otherwise.
 
 
 ## Authors
