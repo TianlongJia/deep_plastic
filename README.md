@@ -41,4 +41,5 @@ Campus, the Netherlands.
 ## Authors
 
 - [@Tianlong Jia](https://github.com/TianlongJia)
-
+- [@Andre Jehan Vallendar](https://github.com/ajv95)
+- [@Riccardo Taormina](https://github.com/rtaormina)
