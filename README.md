@@ -32,9 +32,9 @@ litter items, collected from semi-controlled experiments in a drainage canal of 
 
 ## Usage
 
--  `main_Model_training.ipynb` file in the repository is for training deep learning models.
-- `main_Evaluation.ipynb` file is for evaluating model performnaces on test sets.
--  `main_Data_Augmentation.ipynb` file is for generating images using data augmentation techniques.
+-  `main_Model_training.ipynb` is the code for training deep learning models.
+- `main_Evaluation.ipynb` is the code for evaluating model performnaces on test sets.
+-  `main_Data_Augmentation.ipynb` is the code for generating images using data augmentation techniques.
 -  `config.yaml` file is for defining parameters and other properties for the study.
 
 
