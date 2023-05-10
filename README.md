@@ -16,7 +16,7 @@ dataset of around ten thousand camera and phone images of floating macroplastic 
 litter items, collected from semi-controlled experiments in a drainage canal of the TU Delft Campus, the Netherlands. This dataset and further details can be found in:
 
 ```bash
-  To do: update the Zenodo link
+  https://doi.org/10.5281/zenodo.7636124
 ```
 
 
