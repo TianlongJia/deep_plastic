@@ -3,7 +3,7 @@
 
 This repository contains the code used for the following publication:
 ```bash
-  To do: update the citation of the paper 
+  Jia T, Vallendar AJ, de Vries R, Kapelan Z and Taormina R (2023) Advancing deep learning-based detection of floating litter using a novel open dataset. Front. Water 5:1298465. doi: 10.3389/frwa.2023.1298465
 ```
 
 The aim of this study is to conduct a thorough evaluation of the performances of five deep learning architectures (ResNet50, InceptionV3, DenseNet121, MobileNetV2, and SqueezeNet) that detect floating macroplastic litter with multi-class image classification. The study also evaluates the benefits of multiple transfer learning strategies and data augmentation techniques on detection performance, and assess and improves the generalization ability of architectures considering unseen litter items and new device settings. 
