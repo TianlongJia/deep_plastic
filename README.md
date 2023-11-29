@@ -47,7 +47,14 @@ litter items, collected from semi-controlled experiments in a drainage canal of 
 ## Citation
 If this repository helps your research or you use the aforementioned dataset for a publication, please cite the paper. Here is a BibTeX entry:
 
-```bash
-  To do: update the citation of the paper (BibTeX entry) 
+```BibTeX
+@article{jia2023advancing,
+  title={Advancing Deep Learning-based Detection of Floating Litter using a Novel Open Dataset},
+  author={Jia, Tianlong and Vallendar, Andre Jehan and de Vries, Rinze and Kapelan, Zoran and Taormina, Riccardo},
+  journal={Frontiers in Water},
+  volume={5},
+  pages={1298465},
+  publisher={Frontiers},
+  year={2023}
+}
 ```
-The paper can be found : https://XXXXXX   (To do: update it)
