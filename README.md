@@ -59,4 +59,4 @@ detection of floating litter using a novel open dataset. Frontiers in Water, 5, 
 ```
 ## Contact
 
-➡️ Tianlong Jia ([T.Jia@tudelft.nl](mailto:T.Jia@tudelft.nl))
+➡️ Tianlong Jia ([tianlong.jia@kit.edu](mailto:tianlong.jia@kit.edu))
