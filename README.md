@@ -38,13 +38,6 @@ litter items, collected from semi-controlled experiments in a drainage canal of 
 -  `main_Data_Augmentation.ipynb` is the code for generating images using data augmentation techniques.
 -  `config.yaml` file is for defining parameters and other properties for the study.
 
-
-## Authors
-
-- [@Tianlong Jia](https://github.com/TianlongJia)
-- [@Andre Jehan Vallendar](https://github.com/ajv95)
-- [@Riccardo Taormina](https://github.com/rtaormina)
-
 ## Citation
 If this repository helps your research or you use the aforementioned dataset for a publication, please cite the paper. Here is a BibTeX entry:
 
